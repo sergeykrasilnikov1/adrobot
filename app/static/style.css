@@ -1,0 +1,36 @@
+:root{font-family:system-ui,sans-serif;color:#1b2636;background:#f0f3f7;line-height:1.45}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0}
+header{background:#172634;color:white;padding:17px 0}
+.shell{width:min(1100px,calc(100% - 40px));margin:auto}
+.brand{font-size:1.15rem;font-weight:750;display:flex;gap:14px;align-items:center}
+.brand span{font-size:.78rem;font-weight:500;color:#a7c5d5;border-left:1px solid #587181;padding-left:14px}
+main{padding:32px 0 60px}
+h1{margin:0 0 24px;font-size:2.3rem;letter-spacing:-.05em}
+h2,h3{margin:0 0 16px;line-height:1.2}
+.layout{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.panel{padding:23px;background:#fff;border:1px solid #d9e0e8;border-radius:12px;margin-bottom:16px}
+form{display:grid;gap:12px}
+label{display:grid;gap:5px;font-size:.88rem;font-weight:650}
+button,input,select{font:inherit;border:1px solid #bac8d4;border-radius:6px;background:#fff;color:inherit;padding:8px 11px;min-width:0}
+button{cursor:pointer;font-weight:650}
+button:hover{background:#eaf1f5}
+button:disabled{opacity:.55;cursor:wait}
+button.primary{background:#145a64;border-color:#145a64;color:white}
+button.primary:hover{background:#10464e}
+.actions,.heading,.add{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.heading{justify-content:space-between}
+.heading h2{margin-bottom:6px}
+a{color:#145a64}
+.flow{margin-top:18px;border:1px solid #dce4ea;border-radius:8px;padding:14px}
+.flow.dirty{background:#fff9e2;border-color:#ded396}
+.scroll{overflow:auto}
+table{border-collapse:collapse;width:100%;margin:10px 0;font-variant-numeric:tabular-nums}
+td,th{text-align:left;padding:9px 8px;border-bottom:1px solid #d9e0e8;white-space:nowrap}
+td:first-child{white-space:normal;min-width:145px}
+td input{width:68px}
+.muted{color:#526478;font-size:.86rem}
+.removed{color:#526478;background:#f3f5f7}
+#notice,.warning{background:#fdf0df;border:1px solid #e6c89c;padding:10px 14px;border-radius:7px}
+@media(max-width:680px){.layout{grid-template-columns:1fr}.shell{width:calc(100% - 24px)}.panel{padding:15px}}
